@@ -46,20 +46,48 @@ body {
 }
 
 .btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    margin-top: 2rem;
-    background-color: #94d2bd;
-    color: #333;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    font-family: Helvetica, sans-serif;
-}
-
-.btn:hover {
-    background-color: #6f9e8f;
-}
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    margin-top: 50px;
+    font-size: 18px;
+    color: rgb(193, 163, 98);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .btn:hover::before {
+    scale: 3;
+  }
+  
+  .btn:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .b:active {
+    scale: 1;
+  }
+  
 
 .bg-video {
     position: absolute;
