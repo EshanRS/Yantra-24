@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #dfe9f5;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+nav {
+  height: 100vh;
+  background: #2c3e50;
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo span {
+  display: block;
+  font-weight: bold;
+  padding-top: 10px;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding-top: 20px;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #34495e;
+}
+
+nav ul li a .fas {
+  margin-right: 10px;
+}
+
+nav ul li.logout {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+/* Main Section */
+.main {
+  padding: 20px;
+  width: calc(100% - 280px); /* Adjusting for the width of the nav */
+}
+
+.main h1 {
+  color: #34495e;
+}
+
+.main-top {
+  margin-bottom: 20px;
+}
+
+.main-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 0 45%;
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #7f8c8d;
+}
+
+.card button {
+  background: #e74c3c;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.card button:hover {
+  background: #c0392b;
+}
+
+/* Courses */
+.main-course {
+  margin-top: 20px;
+}
+
+.course-box {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.course h1 {
+  color: #34495e;
+}
+
+.course-box .course {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  background: #ecf0f1;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.box h3 {
+  color: #34495e;
+}
+
+.box p {
+  color: #7f8c8d;
+}
+
+.box button {
+  background: #3498db;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.box button:hover {
+  background: #2980b9;
+}
+
+.box img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  max-width: 100%; /* Ensuring images don't exceed their container */
+  height: auto; /* Allowing images to maintain their aspect ratio */
+}
