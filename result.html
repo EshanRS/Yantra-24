@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <img src="logo.jpg" alt="Logo">
+        <span>Solar Energy</span>
+      </div>
+      <ul>
+        <li><a href="home.html">
+          <i class="fas fa-home"></i>
+          <span class="nav-item">Home</span>
+        </a></li>
+      </ul>
+    </nav>
+
+    <section class="main">
+      <div class="main-top">
+        <h1>Overview</h1>
+      </div>
+      <div class="main-skills">
+        <div class="card">
+          <h3>DHI</h3>
+          <img src="4.jpg" style="width: 300px; height: 180px;" alt="DHI Image">
+          <button onclick="redirectToDetails()">About</button>
+        </div>
+        <div class="card">
+          <h3>DNI</h3>
+          <img src="5.png" style="width: 300px; height: 180px;" alt="DNI Image">
+          <button onclick="redirectToDetails()">About</button>
+        </div>
+        <div class="card">
+          <h3>GHI</h3>
+          <img src="6.gif" style="width: 300px; height: 180px;" alt="GHI Image">
+          <button onclick="redirectToDetails()">About</button>
+        </div>
+        <div class="card">
+          <h3>Angle</h3>
+          <img src="7.jpeg" style="width: 300px; height: 180px;" alt="Angle Image">
+          <button onclick="redirectToDetail()">About</button>
+        </div>
+      </div>      
+
+      <section class="main-course">
+        <h1>Result</h1>
+        <div class="course-box">
+          <div class="course">
+            <div class="box">
+              <h3>Clearsky DHI</h3>
+              <p  id="DHI">Description of Clearsky DHI.</p>
+            </div>
+            <div class="box">
+              <h3>Clearsky DNI</h3>
+              <p id="DNI">Predicted direct normal irradiance</p>
+            </div>
+            <div class="box">
+              <h3>Clearsky GHI</h3>
+              <p id="GNI">Predicted global horizontal irradiance</p>
+            </div>
+            <div class="box">
+              <h3>Angle</h3>
+              <p id="ANG">Solar panel angle</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <script>
+    function redirectToDetails() {
+      window.location.href = "https://www.solaranywhere.com/support/data-fields/definitions/";
+    }
+    function redirectToDetail() {
+      window.location.href = "https://www.linkedin.com/pulse/how-determine-installation-direction-angle-solar-panels-summer-xia";
+    }
+  </script>
+  <script src="./script.js"></script>
+</body>
+</html>

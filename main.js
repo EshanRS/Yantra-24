@@ -14,6 +14,6 @@ button.addEventListener("click", () => {
     const delayInMilliseconds = 500; // 3 seconds
     setTimeout(() => {
         // Redirect to another page (replace 'index.html' with the desired page)
-        window.location.href = "index.html";
+        window.location.href = "result.html";
     }, delayInMilliseconds);
 });

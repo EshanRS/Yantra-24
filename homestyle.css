@@ -9,7 +9,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(#000000 50%, #c153f0);
+    background: linear-gradient(#e7970d 50%, #c153f0);
 }
 
 .container {
@@ -32,7 +32,7 @@ body {
     margin: auto;
     font-size: 80px;
     text-align: center;
-    color: #c153f0;
+    color: #e10f0f;
     margin-bottom: 1em; /* Add space below the logo */
 }
 
