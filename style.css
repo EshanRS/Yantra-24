@@ -16,13 +16,14 @@ body {
 
 .container {
   display: flex;
+  min-height: 100vh;
 }
 
 nav {
-  height: 100vh;
+  flex-shrink: 0; /* Ensure the navigation doesn't shrink */
   background: #2c3e50;
   width: 280px;
-  overflow: hidden;
+  overflow: auto; /* Enable scrolling for the navigation */
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 
@@ -77,7 +78,7 @@ nav ul li.logout {
 /* Main Section */
 .main {
   padding: 20px;
-  width: calc(100% - 280px); /* Adjusting for the width of the nav */
+  width: calc(100% - 280px);
 }
 
 .main h1 {
@@ -95,13 +96,14 @@ nav ul li.logout {
 }
 
 .card {
-  flex: 0 0 45%;
+  flex: 0 0 calc(45% - 20px);
   background: #fff;
   text-align: center;
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  position: relative;
 }
 
 .card h3 {
@@ -113,14 +115,25 @@ nav ul li.logout {
   color: #7f8c8d;
 }
 
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
 .card button {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
   background: #e74c3c;
   color: #fff;
   padding: 7px 15px;
   border-radius: 10px;
-  margin-top: 15px;
   cursor: pointer;
   border: none;
+  transition: background 0.3s ease;
 }
 
 .card button:hover {
@@ -183,6 +196,7 @@ nav ul li.logout {
   display: block;
   margin: 0 auto;
   margin-bottom: 15px;
-  max-width: 100%; /* Ensuring images don't exceed their container */
-  height: auto; /* Allowing images to maintain their aspect ratio */
+  width: 200px;
+  max-width: 100%;
+  height: auto;
 }
